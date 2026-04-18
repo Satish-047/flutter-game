@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- API 31+: Android 12 masks windowSplashScreenAnimatedIcon to a small circle, so a
+         full 9:16 poster must NOT be used there. Use the same layer-list as pre-12
+         (solid fill + centered splash) as the splash window background instead. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowSplashScreenBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+</resources>

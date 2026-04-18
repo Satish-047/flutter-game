@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- See values-v31/styles.xml — full-bleed splash via drawable, no squircle icon. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowSplashScreenBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+</resources>
